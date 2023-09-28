@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -name "*.html" -newermt "$(stat -c %y ../ | cut -d'.' -f1)" -exec cp -u {} ../ \;
