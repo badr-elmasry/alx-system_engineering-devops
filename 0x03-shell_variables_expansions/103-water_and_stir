@@ -1,3 +1,2 @@
 #!/bin/bash
-sum=$(($(tr -cd 'a' <<< "$WATER" | wc -c) + $(tr -cd 'a' <<< "$STIR" | wc -c)))
-echo "$sum" | tr '0123456789' 'bestchol'
+echo "$((10#${WATER//[^a]/} + 10#${STIR//[^a]/}))" | tr '0123456789' 'bestchol'
