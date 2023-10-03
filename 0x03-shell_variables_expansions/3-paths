@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS=: dirs=($PATH) count=${#dirs[@]} echo $count
+echo $PATH |tr ":" "\n" | wc -l
