@@ -1,0 +1,2 @@
+#!/bin/bash
+IFS=: dirs=($PATH) count=${#dirs[@]} echo $count
